@@ -11,6 +11,11 @@ spec:
     spec:
       containers:
       - image: gcr.io/your-project-id/your-image-name  # Replace with your container image
+        env:
+        - name: currentStatus
+          value: 'False'
+        - name: newStatus
+          value: 'True'
         resources:
           limits:
             memory: '256Mi'  # Adjust memory limit as needed
